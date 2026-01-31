@@ -1,0 +1,27 @@
+[general]
+input_dir = "./input"
+output_dir = "./output"
+recursive = false
+delete_source = false
+
+[watch]
+poll_interval_secs = 2
+debounce_ms = 500
+enabled = true
+
+[processing]
+extensions = [
+    "csv",
+    "json",
+    "xml",
+    "xls",
+    "xlsx",
+    "ods",
+]
+csv_delimiter = ","
+csv_has_header = true
+infer_schema_rows = 1000
+
+[logging]
+level = "info"
+show_progress = true
